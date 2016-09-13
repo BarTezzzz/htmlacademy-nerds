@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Roboto Medium";
+  src: local("Roboto Medium"),
+    url('../fonts/Roboto-master/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Roboto Light";
+  src: local("Roboto Light"),
+    url('../fonts/Roboto-master/Roboto-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Symbol Nerds";
+  src: local("Symbol Nerds"),
+    url('../fonts/symbol-nerds/symbol-nerds.woff') format('woff');
+}
