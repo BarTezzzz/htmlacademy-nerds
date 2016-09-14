@@ -1,17 +1,109 @@
 @font-face {
   font-family: "Roboto Medium";
-  src: local("Roboto Medium"),
-    url('../fonts/Roboto-master/Roboto-Medium.ttf') format('truetype');
+  src: local("Roboto Medium"), url('../fonts/Roboto-master/Roboto-Medium.ttf') format('truetype');
 }
 
 @font-face {
   font-family: "Roboto Light";
-  src: local("Roboto Light"),
-    url('../fonts/Roboto-master/Roboto-Light.ttf') format('truetype');
+  src: local("Roboto Light"), url('../fonts/Roboto-master/Roboto-Light.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "Symbol Nerds";
-  src: local("Symbol Nerds"),
-    url('../fonts/symbol-nerds/symbol-nerds.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-family: "symbols-nerds";
+  src: url("../fonts/symbols-nerds.woff") format("woff"), url("../fonts/symbols-nerds.woff2") format("woff2");
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  margin: 0 auto;
+  padding: 0 160px;
+  width: 880px;
+}
+
+.pink-btn {
+  display: block;
+  padding: 10px 0;
+  width: 240px;
+  font: 12px/18px "Roboto Medium", Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #fb565a;
+  border-radius: 3px;
+  color: #ffffff;
+}
+
+.symbol-nerds {
+  font-family: "symbol-nerds";
+}
+
+
+header {
+  padding: 20px 0 75px 0;
+  background-color: #eeeeee;
+}
+
+.header-top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: 1px solid red;
+}
+
+.header-top-menu ul {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  width: 560px;
+  font-size: 0;
+  list-style: none;
+  outline: 1px solid red;
+}
+
+.header-top-menu li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  margin-right: 40px;
+  vertical-align: top;
+  outline: 1px solid red;
+}
+
+.header-top-menu li:last-of-type {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.header-top-menu a {
+  font: 14px/30px "Roboto Medium", Arial, sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.header-slider {
+  position: relative;
+}
+
+.header-slider-slide {
+  
+}
+
+.header-slide {
+  
+}
+
+.header-slide h2 {
+  font: 36px/36px "Roboto Medium", Arial, sans-serif;
+  color: #000000;
+}
+
+.header-slide p {
+  font: 16px/22px "Roboto Medium", Arial, sans-serif;
+  color: #283136;
 }
