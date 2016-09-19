@@ -20,6 +20,12 @@ a {
   text-decoration: none;
 }
 
+h2,
+h3,
+p {
+  margin: 0;
+}
+
 .content {
   margin: 0 auto;
   padding: 0 160px;
@@ -42,9 +48,8 @@ a {
   font-family: "symbol-nerds";
 }
 
-
 header {
-  padding: 20px 0 75px 0;
+  padding-top: 25px;
   background-color: #eeeeee;
 }
 
@@ -52,6 +57,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
   outline: 1px solid red;
 }
 
@@ -69,8 +75,9 @@ header {
 .header-top-menu li {
   display: inline-block;
   padding: 0;
+  padding-top: 15px;
   margin: 0;
-  margin-right: 40px;
+  margin-right: 47px;
   vertical-align: top;
   outline: 1px solid red;
 }
@@ -90,20 +97,100 @@ header {
   position: relative;
 }
 
-.header-slider-slide {
-  
+.header-slider input {
+  display: none;
+}
+
+.header-slider-switches {
+  position: absolute;
+  top: 207px;
+  left: 405px;
+  display: flex;
+  justify-content: space-between;
+  width: 50px;
+  z-index: 1;
+  outline: 1px solid red;
+}
+
+.header-slider-switches label{
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+#slider-r1:checked ~ .header-slider-switches label[for="slider-r1"]::after,
+#slider-r2:checked ~ .header-slider-switches label[for="slider-r2"]::after,
+#slider-r3:checked ~ .header-slider-switches label[for="slider-r3"]::after{
+  position: absolute;
+  top: 3px;
+  left: 2.7px;
+  width: 4px;
+  height: 4px;
+  background-color: #c1c1c1;
+  border-radius: 50%;
+  content: "";
 }
 
 .header-slide {
-  
+  display: none;
+  position: relative;
+  height: 315px;
+  outline: 1px solid red;
+}
+
+#slider-r1:checked ~ .header-slider-slides .header-slide1 {
+  display: block;
+}
+
+#slider-r2:checked ~ .header-slider-slides .header-slide2 {
+  display: block;
+}
+
+#slider-r3:checked ~ .header-slider-slides .header-slide3 {
+  display: block;
 }
 
 .header-slide h2 {
+  margin-bottom: 18px;
+  padding-top: 33px;
   font: 36px/36px "Roboto Medium", Arial, sans-serif;
   color: #000000;
 }
 
 .header-slide p {
+  margin-bottom: 26px;
   font: 16px/22px "Roboto Medium", Arial, sans-serif;
   color: #283136;
+}
+
+.header-slide1::after { 
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 338px;
+  height: 231px;
+  background: #eeeeee url("../img/header-slide1.png") no-repeat center;
+  content: "";
+}
+
+.header-slide2::after { 
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 230px;
+  height: 249px;
+  background: #eeeeee url("../img/header-slide2.png") no-repeat center;
+  content: "";
+}
+
+.header-slide3::after { 
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 333px;
+  height: 319px;
+  background: #eeeeee url("../img/header-slide3.png") no-repeat center;
+  content: "";
 }
