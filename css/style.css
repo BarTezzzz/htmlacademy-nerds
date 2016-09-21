@@ -1,11 +1,17 @@
 @font-face {
   font-family: "Roboto Medium";
-  src: local("Roboto Medium"), url('../fonts/Roboto-master/Roboto-Medium.ttf') format('truetype');
+  src: local("Roboto Medium"), 
+    url('../fonts/web/robotomedium.woff') format('woff'),
+    url('../fonts/web/robotomedium.woff2') format('woff2'),
+    url('../fonts/Roboto-master/Roboto-Medium.ttf') format('truetype');
 }
 
 @font-face {
   font-family: "Roboto Light";
-  src: local("Roboto Light"), url('../fonts/Roboto-master/Roboto-Light.ttf') format('truetype');
+  src: local("Roboto Light"), 
+    url('../fonts/web/roboto.woff') format('woff'),
+    url('../fonts/web/roboto.woff2') format('woff2'),
+    url('../fonts/Roboto-master/Roboto-Light.ttf') format('truetype');
 }
 
 /* --SYMBOL-NERDS-CSS ---------------------------------------------------- */
@@ -14,8 +20,8 @@
   font-weight: normal;
   font-style: normal;
   font-family: "symbols-nerds";
-  src: url("../fonts/symbols-nerds/symbols-nerds.woff") format("woff"),
-       url("../fonts/symbols-nerds/symbols-nerds.woff2") format("woff2");
+  src: url('../fonts/symbols-nerds/symbols-nerds.woff') format('woff'),
+       url('../fonts/symbols-nerds/symbols-nerds.woff2') format('woff2');
 }
 
 [class^="icon-"]::before,
@@ -48,6 +54,11 @@
 .icon-instagramm::before { content: "📷"; } /* "\1f4f7" */
 
 /* ---------------------------------------------------------- */
+
+body {
+  background-color: #ffffff;
+}
+
 a {
   text-decoration: none;
 }
@@ -77,9 +88,19 @@ span {
   color: #ffffff;
 }
 
+.pink-btn:hover {
+  background-color: #d6494d;
+}
+
+.pink-btn:active {
+  background-color: #b63538;
+}
+
 .symbol-nerds {
   font-family: "symbol-nerds";
 }
+
+/* --HEADER-------------------------------------------------------- */
 
 header {
   padding-top: 27px;
@@ -128,9 +149,27 @@ header {
   color: #000000;
 }
 
+.header-top-menu a:hover {
+  color: #fb565a; 
+}
+
+.header-top-menu a:active {
+  color: #000000;
+  opacity: 0.3; 
+}
+
 .header-top-menu .icon-basket {
   font-size: 17px;
   opacity: 0.3;
+}
+
+.header-basket-link:hover .icon-basket{
+  opacity: 1; 
+}
+
+.header-basket-link:active .icon-basket{
+  color: #000000;
+  opacity: 0.3; 
 }
 
 .header-slider {
@@ -204,6 +243,10 @@ header {
   color: #283136;
 }
 
+.header-slide3 p {
+   word-spacing: 1px; 
+}
+
 .header-slide1::after { 
   position: absolute;
   top: 12px;
@@ -232,4 +275,15 @@ header {
   height: 319px;
   background: #eeeeee url("../img/header-slide3.png") no-repeat center;
   content: "";
+}
+
+/* --FOOTER-------------------------------------------------------------- */
+
+footer {
+  
+}
+
+.map-content {
+  margin: 0 auto;
+  width: 1199px;
 }
