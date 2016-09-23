@@ -59,6 +59,19 @@ body {
   background-color: #ffffff;
 }
 
+.content {
+  margin: 0 auto;
+  padding: 0 160px;
+  width: 880px;
+}
+
+/* --HEADER-------------------------------------------------------- */
+
+header {
+  padding-top: 27px;
+  background-color: #eeeeee;
+}
+
 a {
   text-decoration: none;
 }
@@ -70,10 +83,8 @@ span {
   margin: 0;
 }
 
-.content {
-  margin: 0 auto;
-  padding: 0 160px;
-  width: 880px;
+img {
+  max-width: 100%;
 }
 
 .pink-btn {
@@ -94,17 +105,6 @@ span {
 
 .pink-btn:active {
   background-color: #b63538;
-}
-
-.symbol-nerds {
-  font-family: "symbol-nerds";
-}
-
-/* --HEADER-------------------------------------------------------- */
-
-header {
-  padding-top: 27px;
-  background-color: #eeeeee;
 }
 
 .header-top-menu {
@@ -283,7 +283,134 @@ footer {
   
 }
 
-.map-content {
+a {
+  text-decoration: none;
+}
+
+h2,
+h3,
+p,
+span,
+ul,
+li{
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.pink-btn {
+  display: block;
+  padding: 10px 0;
+  width: 240px;
+  font: 12px/18px "Roboto Medium", Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #fb565a;
+  border-radius: 3px;
+  color: #ffffff;
+}
+
+.pink-btn:hover {
+  background-color: #d6494d;
+}
+
+.pink-btn:active {
+  background-color: #b63538;
+}
+
+.footer__map-content {
+  position: relative;
   margin: 0 auto;
   width: 1199px;
+}
+
+.footer__our-address {
+  position: absolute;
+  top: 87px;
+  left: 160px;
+  padding: 25px 0 25px 20px;
+  width: 230px;
+  background-color: #ffffff;
+}
+
+.footer__our-address h3 {
+  margin-bottom: 20px; 
+  font: 16px/30px "Roboto Medium", Arial, sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.footer__our-address p,
+.footer__our-address span {
+  font: 16px/20px "Roboto Medium", Arial, sans-serif;
+  color: #666666; 
+}
+
+.footer__our-address p {
+  margin-bottom: 20px; 
+}
+
+.footer__our-address span {
+  display: block;
+  margin-bottom: 30px; 
+}
+
+.footer__write-us-link_pink-btn {
+  width: 200px;
+}
+
+.footer__nerds-logo {
+  position: absolute;
+  top: 105px;
+  right:  200px;
+  width: 231px;
+  height: 190px;
+  background: url('../img/footer-balloon-msg-pic.png') no-repeat center;
+}
+
+.footer__nerds-logo a {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  width: 92px;
+  height: 37px;
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  text-align: center;
+  outline: 1px solid red;
+}
+
+.footer__socials li {
+  display: inline-block;
+  outline: 1px solid red;
+}
+
+.footer__social-btn {
+  display: block;
+  padding-top: 15px;
+  width: 60px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #e1e1e1;
+  vertical-align: top;
+}
+
+.footer__social-btn span {
+  font-size: 26px;
+  color: #ffffff;
+}
+
+.footer__socials-info {
+  outline: 1px solid red;
 }
