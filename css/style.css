@@ -85,7 +85,7 @@ body {
   max-width: 100%;
 }
 
-.pink-btn {
+.nerds-common-btn {
   display: block;
   padding: 10px 0;
   width: 240px;
@@ -98,11 +98,11 @@ body {
   color: #ffffff;
 }
 
-.pink-btn:hover {
+.nerds-common-btn:hover {
   background-color: #d6494d;
 }
 
-.pink-btn:active {
+.nerds-common-btn:active {
   background-color: #b63538;
 }
 /* --HEADER-------------------------------------------------------- */
@@ -276,6 +276,85 @@ header-slider__p_wspacing {
   background: #eeeeee url("../img/header-slide3.png") no-repeat center;
   content: "";
 }
+/* --MAIN--------------------------------------------------------------- */
+.main {
+  
+}
+/* --MAIN-INDEX--------------------------------------------------------------- */
+.main_index {
+  
+}
+/* --MAIN-INDEX-Feature-items-------------------------------------------- */
+
+.feature-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 80px 0;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 300px;
+}
+
+.feature-item__h3 {
+  font: 18px/30px "Roboto", Arial, sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.feature-item__h3 {
+  font: 15px/22px "Roboto", Arial, sans-serif;
+  color: #283136;
+}
+
+.nerds-common-btn_order-btn {
+  padding-left: 0;
+  padding-right: 0;
+  width: 140px;
+  text-align: center;
+}
+
+.nerds-common-btn_order-btn_green {
+   background-color: #00ca74; 
+}
+ 
+.nerds-common-btn_order-btn_yellow {
+   background-color: #efc84a; 
+}
+
+/* --MAIN-INDEX-About-us-------------------------------------------- */
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 70px 0;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.about-us__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.about-us__col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
 
 /* --FOOTER-------------------------------------------------------------- */
 
@@ -320,7 +399,7 @@ footer {
   margin-bottom: 28px; 
 }
 
-.pink-btn_write-us-link {
+.nerds-common-btn_write-us-link {
   margin-left: 3px;
   width: 205px;
   font-weight: 100;
