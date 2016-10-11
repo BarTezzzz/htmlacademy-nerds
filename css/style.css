@@ -14,7 +14,7 @@
     url('../fonts/Roboto-master/Roboto-Light.ttf') format('truetype');
 }
 
-/* --SYMBOL-NERDS-CSS ---------------------------------------------------- */
+/* --SYMBOL-NERDS-CSS-(icon-font)--------------------------------------------- */
 
 @font-face {
   font-weight: normal;
@@ -111,7 +111,7 @@ header {
   padding-top: 27px;
   background-color: #eeeeee;
 }
-/* --HEADER-TOP-MENU---------------------------------------------- */
+/* --HEADER-TOP-MENU-------------- */
 
 .header-top-menu {
   display: flex;
@@ -174,7 +174,7 @@ header {
   color: #000000;
   opacity: 0.3; 
 }
-/* --HEADER-SLIDER---------------------------------- */
+/* --HEADER-SLIDER--------- */
 
 .header-slider {
   padding-top: 38px;
@@ -276,7 +276,7 @@ header-slider__p_wspacing {
   background: #eeeeee url("../img/header-slide3.png") no-repeat center;
   content: "";
 }
-/* --MAIN--------------------------------------------------------------- */
+/* --MAIN---------------------------------------------------------------------- */
 .main {
   
 }
@@ -284,7 +284,7 @@ header-slider__p_wspacing {
 .main_index {
   
 }
-/* --MAIN-INDEX-Feature-items-------------------------------------------- */
+/* --MAIN-INDEX-Feature-items-------- */
 
 .feature-items {
   display: flex;
@@ -298,23 +298,30 @@ header-slider__p_wspacing {
 .feature-item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   height: 300px;
+  outline: 1px solid red;
+}
+
+.feature-item__img {
+  margin-bottom: 23px;
 }
 
 .feature-item__h3 {
+  margin-bottom: 13px;
   font: 18px/30px "Roboto", Arial, sans-serif;
   text-transform: uppercase;
   color: #000000;
 }
 
-.feature-item__h3 {
+.feature-item__p {
   font: 15px/22px "Roboto", Arial, sans-serif;
   color: #283136;
 }
 
 .nerds-common-btn_order-btn {
+  margin-top: auto;
   padding-left: 0;
   padding-right: 0;
   width: 140px;
@@ -325,18 +332,30 @@ header-slider__p_wspacing {
    background-color: #00ca74; 
 }
  
+.nerds-common-btn_order-btn_green:hover {
+   background-color: #01a25e; 
+}
+
+.nerds-common-btn_order-btn_green:active {
+   background-color: #009053; 
+}
+
 .nerds-common-btn_order-btn_yellow {
    background-color: #efc84a; 
 }
 
-/* --MAIN-INDEX-About-us-------------------------------------------- */
+.nerds-common-btn_order-btn_yellow:hover {
+  background-color: #d6ae2c;
+}
+
+.nerds-common-btn_order-btn_yellow:active {
+  background-color: #c09b24;
+}
+
+/* --MAIN-INDEX-About-us-------------- */
 
 .about-us {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  
   padding: 70px 0;
   border-bottom: 2px solid #eeeeee;
 }
@@ -345,7 +364,6 @@ header-slider__p_wspacing {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  flex-wrap: wrap;
 }
 
 .about-us__row_top {
@@ -361,13 +379,11 @@ header-slider__p_wspacing {
 }
 
 .about-us__col_left {
-  width: 577px;
-  outline: 1px solid red;
+  width: 620px;
 }
 
 .about-us__col_right {
-  width: 230px;
-  outline: 1px solid red;
+  width: 240px;
 }
 
 .about-us__h2 {
@@ -381,6 +397,10 @@ header-slider__p_wspacing {
   color: #283136;
 }
 
+.nerds-big-logo {
+  text-align: center;  
+}
+
 .about-us__span {
   position: relative;
   margin-top: 10px;
@@ -391,7 +411,6 @@ header-slider__p_wspacing {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  outline: 1px solid red;
 }
 
 .about-us__span::before {
@@ -427,13 +446,13 @@ header-slider__p_wspacing {
   padding-left: 35px;
   font: 16px/22px "Roboto", Arial, sans-serif;
   color: #283136;
-  outline: 1px solid red;
 }
 
 .about-us__li::before {
   position: absolute;
-  top: 7px;
+  top: 50%;
   left: 0;
+  transform: translate(0, -50%);
   width: 25px;
   height: 2px;
   background-color: #fb565a;
@@ -444,11 +463,34 @@ header-slider__p_wspacing {
   margin-bottom: 0;
 }
 
+/* --MAIN-INDEX-Portfolio----------- */
+
+.portfolio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0 30px 0;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.portfolio__object {
+  width: 230px;
+  text-align: center;
+  opacity: 0.3;
+}
+
+.portfolio__object:hover,
+.portfolio__object:active {
+   opacity: 1; 
+}
+
 /* --FOOTER-------------------------------------------------------------- */
 
 footer {
-  
+  padding: 80px 0 70px 0;
 }
+
+/* --FOOTER-Map-content--- */
 
 .map-content {
   position: relative;
@@ -510,12 +552,13 @@ footer {
   height: 37px;
 }
 
+/* --FOOTER-Socials-------------- */
+
 .socials {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   padding-top: 72px;
-  padding-bottom: 75px;
   text-align: center;
 }
 
