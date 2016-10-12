@@ -291,7 +291,7 @@ header-slider__p_wspacing {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  padding: 80px 0;
+  padding: 80px 0 78px 0;
   border-bottom: 2px solid #eeeeee;
 }
 
@@ -301,7 +301,6 @@ header-slider__p_wspacing {
   justify-content: flex-start;
   align-items: flex-start;
   height: 300px;
-  outline: 1px solid red;
 }
 
 .feature-item__img {
@@ -387,7 +386,7 @@ header-slider__p_wspacing {
 }
 
 .about-us__h2 {
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   font: 36px/36px "Roboto", Arial, sans-serif;
   color: #000000;
 }
@@ -398,22 +397,33 @@ header-slider__p_wspacing {
 }
 
 .nerds-big-logo {
+  position: relative;
+  padding-top: 85px;
   text-align: center;  
 }
 
-.about-us__span {
+.nerds-big-logo__img-link {
+  position: absolute;
+  top: -10px;
+  left: 30px;
+  width: 187px;
+}
+
+.nerds-big-logo__span {
   position: relative;
   margin-top: 10px;
+  padding-top: 5px;
+  padding-left: 5px;
   display: block;
   width: 230px;
-  height: ;
-  font: 16px/8,56px "Roboto", Arial, sans-serif;
+  height: 20px;
+  font: 16px/8.56px "Roboto Medium", Arial, sans-serif;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
 }
 
-.about-us__span::before {
+.nerds-big-logo__span::before {
   position: absolute;
   top: 7px;
   left: 0;
@@ -423,7 +433,7 @@ header-slider__p_wspacing {
   content: "" ;
 }
 
-.about-us__span::after {
+.nerds-big-logo__span::after {
   position: absolute;
   top: 7px;
   right: 0;
@@ -434,7 +444,7 @@ header-slider__p_wspacing {
 }
 
 .about-us__h3 {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   font: 16px/22px "Roboto", Arial, sans-serif;
   text-transform: uppercase;
   color: #283136;
@@ -442,9 +452,10 @@ header-slider__p_wspacing {
 
 .about-us__li {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   padding-left: 35px;
   font: 16px/22px "Roboto", Arial, sans-serif;
+  letter-spacing: 0px;
   color: #283136;
 }
 
@@ -469,14 +480,13 @@ header-slider__p_wspacing {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 0 30px 0;
+  flex-wrap: wrap;
+  padding: 42px 20px 30px 10px;
   border-bottom: 2px solid #eeeeee;
 }
 
 .portfolio__object {
-  width: 230px;
-  text-align: center;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 .portfolio__object:hover,
@@ -487,7 +497,7 @@ header-slider__p_wspacing {
 /* --FOOTER-------------------------------------------------------------- */
 
 footer {
-  padding: 80px 0 70px 0;
+  padding: 83px 0 70px 0;
 }
 
 /* --FOOTER-Map-content--- */
