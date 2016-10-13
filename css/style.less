@@ -1,0 +1,628 @@
+/* --LESS-Var------------------------------------------------------------- */
+/* --Colors--------- */
+@black:  #000000;
+@white: #ffffff;
+
+
+
+/* --SYMBOL-NERDS-CSS-(icon-font)--------------------------------------------- */
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "symbols-nerds";
+  src: url('../fonts/symbols-nerds/symbols-nerds.woff') format('woff'),
+       url('../fonts/symbols-nerds/symbols-nerds.woff2') format('woff2');
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-nerds";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+  speak: none;
+}
+
+.icon-basket::before { content: "\62"; } /* "b" */
+.icon-facebook::before { content: "\66"; } /* "f" */
+.icon-twitter::before { content: "\74"; } /* "t" */
+.icon-vk::before { content: "\76"; } /* "v" */
+.icon-up-dir::before { content: "\25b2"; } /* "▲" */
+.icon-down-dir::before { content: "\25bc"; } /* "▼" */
+.icon-circle::before { content: "\25cb"; } /* "○" */
+.icon-circle-dot::before { content: "\25cf"; } /* "●" */
+.icon-check-off::before { content: "\2610"; } /* "☐" */
+.icon-check-on::before { content: "\2611"; } /* "☑" */
+.icon-instagramm::before { content: "📷"; } /* "\1f4f7" */
+
+/* ---------------------------------------------------------- */
+
+body {
+  background-color: @white;
+}
+
+/* --COMMON-STYLES----------------------------------------- */
+@font-face {
+  font-family: "Roboto Medium";
+  src: local("Roboto Medium"), 
+    url('../fonts/web/robotomedium.woff') format('woff'),
+    url('../fonts/web/robotomedium.woff2') format('woff2'),
+    url('../fonts/Roboto-master/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Roboto Light";
+  src: local("Roboto Light"), 
+    url('../fonts/web/roboto.woff') format('woff'),
+    url('../fonts/web/roboto.woff2') format('woff2'),
+    url('../fonts/Roboto-master/Roboto-Light.ttf') format('truetype');
+}
+
+.content {
+  margin: 0 auto;
+  padding: 0 160px;
+  width: 880px;
+}
+
+.link-common {
+  text-decoration: none;
+}
+
+.list-common {
+  margin: 0; 
+  padding: 0;
+  list-style: none;
+}
+
+.text-no-margin {
+  margin: 0;
+}
+
+.img-common {
+  max-width: 100%;
+}
+
+.nerds-common-btn {
+  display: block;
+  padding: 10px 0;
+  width: 240px;
+  font: 12px/18px "Roboto", Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  background-color: #fb565a;
+  border-radius: 3px;
+  color: @white;
+}
+
+.nerds-common-btn:hover {
+  background-color: #d6494d;
+}
+
+.nerds-common-btn:active {
+  background-color: #b63538;
+}
+/* --HEADER-------------------------------------------------------- */
+
+header {
+  padding-top: 27px;
+  background-color: #eeeeee;
+}
+/* --HEADER-TOP-MENU-------------- */
+
+.header-top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top-menu__list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-wrap: wrap;
+  width: 557px;
+  font-size: 0;
+}
+
+.header-top-menu__li {
+  display: inline-block;
+  padding: 0;
+  padding-top: 25px;
+  margin: 0;
+  margin-right: 46px;
+  vertical-align: top;
+}
+
+.header-top-menu__list li:last-of-type {
+  margin-right: 0;
+  margin-left: auto;
+  padding-top: 19px;
+}
+
+.header-top-menu__list li:last-of-type .icon-basket {
+  margin-right: 8px;  
+}
+.header-top-menu__link {
+  font: 14px/30px "Roboto", Arial, sans-serif;
+  text-transform: uppercase;
+  color: @black;
+}
+
+.header-top-menu__link:hover {
+  color: #fb565a; 
+}
+
+.header-top-menu__link:active {
+  color: @black;
+  opacity: 0.3; 
+}
+
+.header-top-menu__link_basket .icon-basket {
+  font-size: 17px;
+  opacity: 0.3;
+}
+
+.header-top-menu__link_basket:hover .icon-basket{
+  opacity: 1; 
+}
+
+.header-top-menu__link_basket:active .icon-basket{
+  color: @black;
+  opacity: 0.3; 
+}
+/* --HEADER-SLIDER--------- */
+
+.header-slider {
+  padding-top: 38px;
+  position: relative;
+}
+
+.header-slider__input {
+  display: none;
+}
+
+.header-slider__switches {
+  position: absolute;
+  bottom: 95px;
+  left: 405px;
+  display: flex;
+  justify-content: space-between;
+  width: 50px;
+  z-index: 1;
+}
+
+.header-slider__switch {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background-color: @white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#header-slider__input_r1:checked ~ .header-slider__switches .header-slider__switch[for="header-slider__input_r1"]::after,
+#header-slider__input_r2:checked ~ .header-slider__switches .header-slider__switch[for="header-slider__input_r2"]::after,
+#header-slider__input_r3:checked ~ .header-slider__switches .header-slider__switch[for="header-slider__input_r3"]::after{
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 4px;
+  height: 4px;
+  background-color: #c1c1c1;
+  border-radius: 50%;
+  content: "";
+}
+
+.header-slider__slide {
+  position: relative;
+  display: none;
+  height: 312px;
+}
+
+#header-slider__input_r1:checked ~ .header-slider__slides .header-slider__slide_slide1,
+#header-slider__input_r2:checked ~ .header-slider__slides .header-slider__slide_slide2,
+#header-slider__input_r3:checked ~ .header-slider__slides .header-slider__slide_slide3 {
+  display: block;
+}
+ 
+.header-slider__h2 {
+  margin-bottom: 18px;
+  padding-top: 33px;
+  font: 36px/36px "Roboto", Arial, sans-serif;
+  letter-spacing: 0.1px;
+  color: @black;
+}
+
+.header-slider__p {
+  margin-bottom: 26px;
+  font: 16px/22px "Roboto", Arial, sans-serif;
+  color: #283136;
+}
+
+header-slider__p_wspacing {
+   word-spacing: 1.5px; 
+}
+
+.header-slider__slide_slide1::after { 
+  position: absolute;
+  top: 12px;
+  right: 0;
+  width: 338px;
+  height: 231px;
+  background: #eeeeee url("../img/header-slide1.png") no-repeat center;
+  content: "";
+}
+
+.header-slider__slide_slide2::after { 
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  width: 230px;
+  height: 249px;
+  background: #eeeeee url("../img/header-slide2.png") no-repeat center;
+  content: "";
+}
+
+.header-slider__slide_slide3::after { 
+  position: absolute;
+  top: -7px;
+  right: 6px;
+  width: 333px;
+  height: 319px;
+  background: #eeeeee url("../img/header-slide3.png") no-repeat center;
+  content: "";
+}
+/* --MAIN---------------------------------------------------------------------- */
+.main {
+  
+}
+/* --MAIN-INDEX--------------------------------------------------------------- */
+.main_index {
+  
+}
+/* --MAIN-INDEX-Feature-items-------- */
+
+.feature-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 80px 0 78px 0;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 300px;
+}
+
+.feature-item__img {
+  margin-bottom: 23px;
+}
+
+.feature-item__h3 {
+  margin-bottom: 13px;
+  font: 18px/30px "Roboto", Arial, sans-serif;
+  text-transform: uppercase;
+  color: @black;
+}
+
+.feature-item__p {
+  font: 15px/22px "Roboto", Arial, sans-serif;
+  color: #283136;
+}
+
+.nerds-common-btn_order-btn {
+  margin-top: auto;
+  padding-left: 0;
+  padding-right: 0;
+  width: 140px;
+  text-align: center;
+}
+
+.nerds-common-btn_order-btn_green {
+   background-color: #00ca74; 
+}
+ 
+.nerds-common-btn_order-btn_green:hover {
+   background-color: #01a25e; 
+}
+
+.nerds-common-btn_order-btn_green:active {
+   background-color: #009053; 
+}
+
+.nerds-common-btn_order-btn_yellow {
+   background-color: #efc84a; 
+}
+
+.nerds-common-btn_order-btn_yellow:hover {
+  background-color: #d6ae2c;
+}
+
+.nerds-common-btn_order-btn_yellow:active {
+  background-color: #c09b24;
+}
+
+/* --MAIN-INDEX-About-us-------------- */
+
+.about-us {
+  
+  padding: 70px 0;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.about-us__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.about-us__row_top {
+  margin-bottom: 45px;
+}
+
+.about-us__col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.about-us__col_left {
+  width: 620px;
+}
+
+.about-us__col_right {
+  width: 240px;
+}
+
+.about-us__h2 {
+  margin-bottom: 17px;
+  font: 36px/36px "Roboto", Arial, sans-serif;
+  color: @black;
+}
+
+.about-us__p {
+  font: 16px/22px "Roboto", Arial, sans-serif;
+  color: #283136;
+}
+
+.nerds-big-logo {
+  position: relative;
+  padding-top: 85px;
+  text-align: center;  
+}
+
+.nerds-big-logo__img-link {
+  position: absolute;
+  top: -10px;
+  left: 30px;
+  width: 187px;
+}
+
+.nerds-big-logo__span {
+  position: relative;
+  margin-top: 10px;
+  padding-top: 5px;
+  padding-left: 5px;
+  display: block;
+  width: 230px;
+  height: 20px;
+  font: 16px/8.56px "Roboto Medium", Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: @black;
+}
+
+.nerds-big-logo__span::before {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background-color: #eeeeee;
+  content: "" ;
+}
+
+.nerds-big-logo__span::after {
+  position: absolute;
+  top: 7px;
+  right: 0;
+  width: 60px;
+  height: 2px;
+  background-color: #eeeeee;
+  content: "" ;
+}
+
+.about-us__h3 {
+  margin-bottom: 22px;
+  font: 16px/22px "Roboto", Arial, sans-serif;
+  text-transform: uppercase;
+  color: #283136;
+}
+
+.about-us__li {
+  position: relative;
+  margin-bottom: 23px;
+  padding-left: 35px;
+  font: 16px/22px "Roboto", Arial, sans-serif;
+  letter-spacing: 0px;
+  color: #283136;
+}
+
+.about-us__li::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+  content: "" ;
+}
+
+.about-us__li:last-of-type {
+  margin-bottom: 0;
+}
+
+/* --MAIN-INDEX-Portfolio----------- */
+
+.portfolio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 42px 20px 30px 10px;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.portfolio__object {
+  opacity: 0.2;
+}
+
+.portfolio__object:hover,
+.portfolio__object:active {
+   opacity: 1; 
+}
+
+/* --FOOTER-------------------------------------------------------------- */
+
+footer {
+  padding: 83px 0 70px 0;
+}
+
+/* --FOOTER-Map-content--- */
+
+.map-content {
+  position: relative;
+  margin: 0 auto;
+  width: 1199px;
+}
+
+.map-content__our-address {
+  position: absolute;
+  top: 88px;
+  left: 160px;
+  padding: 25px 0 25px 20px;
+  width: 230px;
+  background-color: @white;
+}
+
+.map-content__h3 {
+  margin-bottom: 13px; 
+  font: 16px/30px "Roboto", Arial, sans-serif;
+  color: @black;
+  text-transform: uppercase;
+}
+
+.map-content__p,
+.map-content__span {
+  font: 16px/20px "Roboto", Arial, sans-serif;
+  color: #666666; 
+}
+
+.map-content__p {
+  margin-bottom: 20px; 
+}
+
+.map-content__span {
+  display: block;
+  margin-bottom: 28px; 
+}
+
+.nerds-common-btn_write-us-link {
+  margin-left: 3px;
+  width: 205px;
+  font-weight: 100;
+}
+
+.nerds-logo-small {
+  position: absolute;
+  top: 112px;
+  right:  129px;
+  width: 231px;
+  height: 190px;
+  background: url('../img/footer-balloon-msg-pic.png') no-repeat center;
+}
+
+.nerds-logo-small__a {
+  position: absolute;
+  top: 55px;
+  left: 35px;
+  width: 92px;
+  height: 37px;
+}
+
+/* --FOOTER-Socials-------------- */
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-top: 72px;
+  text-align: center;
+}
+
+.socials__list {
+  display: flex;
+  justify-content: space-between;
+  width: 240px;
+}
+
+.socials__li {
+  display: inline-block;
+}
+
+.socials__social-btn {
+  display: block;
+  padding-top: 19px;
+  width: 62px;
+  height: 43px;
+  border-radius: 50%;
+  background-color: #e1e1e1;
+  vertical-align: top;
+}
+
+.socials__social-btn:hover {
+   background-color: #fb565a; 
+}
+
+.socials__social-btn:active {
+   background-color: #d6494d; 
+}
+
+.socials__icon-font {
+  font-size: 22px;
+  color: @white;
+}
+
+.socials-info {
+  padding-right: 18px;
+  text-align: left;
+}
+
+.socials-info__h2 {
+  margin-bottom: 10px;
+  font: 36px/36px "Roboto", Arial, sans-serif;
+  color: @black;
+}
+
+.socials-info__span {
+  font: 16px/22px "Roboto", Arial, sans-serif;
+  color: #283136;
+}
