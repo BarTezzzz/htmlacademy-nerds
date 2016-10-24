@@ -96,10 +96,12 @@ body {
   background-color: #fb565a;
   border-radius: 3px;
   color: #ffffff;
+  transition: transform 0.5s ease 0s;
 }
 
 .nerds-common-btn:hover {
   background-color: #d6494d;
+  transform: scale(1.2);
 }
 
 .nerds-common-btn:active {
@@ -110,6 +112,10 @@ body {
 header {
   padding-top: 27px;
   background-color: #eeeeee;
+}
+
+.header_no-index {
+  padding-bottom: 30px;
 }
 /* --HEADER-TOP-MENU-------------- */
 
@@ -590,10 +596,12 @@ footer {
   border-radius: 50%;
   background-color: #e1e1e1;
   vertical-align: top;
+  transition: transform 0.5s ease 0s;
 }
 
 .socials__social-btn:hover {
-   background-color: #fb565a; 
+  background-color: #fb565a; 
+  transform: scale(1.5);
 }
 
 .socials__social-btn:active {
