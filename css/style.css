@@ -77,7 +77,7 @@ body {
   list-style: none;
 }
 
-.text-no-margin {
+.text-common {
   margin: 0;
 }
 
@@ -85,7 +85,7 @@ body {
   max-width: 100%;
 }
 
-.nerds-common-btn {
+.nerds-btn-common {
   display: block;
   padding: 10px 0;
   width: 240px;
@@ -99,14 +99,15 @@ body {
   transition: transform 0.5s ease 0s;
 }
 
-.nerds-common-btn:hover {
+.nerds-btn-common:hover {
   background-color: #d6494d;
   transform: scale(1.2);
 }
 
-.nerds-common-btn:active {
+.nerds-btn-common:active {
   background-color: #b63538;
 }
+
 /* --HEADER-------------------------------------------------------- */
 
 header {
@@ -339,7 +340,7 @@ header-slider__p_wspacing {
   color: #283136;
 }
 
-.nerds-common-btn_order-btn {
+.nerds-btn-common_order-btn {
   margin-top: auto;
   padding-left: 0;
   padding-right: 0;
@@ -347,27 +348,27 @@ header-slider__p_wspacing {
   text-align: center;
 }
 
-.nerds-common-btn_order-btn_green {
+.nerds-btn-common_order-btn_green {
    background-color: #00ca74; 
 }
  
-.nerds-common-btn_order-btn_green:hover {
+.nerds-btn-common_order-btn_green:hover {
    background-color: #01a25e; 
 }
 
-.nerds-common-btn_order-btn_green:active {
+.nerds-btn-common_order-btn_green:active {
    background-color: #009053; 
 }
 
-.nerds-common-btn_order-btn_yellow {
+.nerds-btn-common_order-btn_yellow {
    background-color: #efc84a; 
 }
 
-.nerds-common-btn_order-btn_yellow:hover {
+.nerds-btn-common_order-btn_yellow:hover {
   background-color: #d6ae2c;
 }
 
-.nerds-common-btn_order-btn_yellow:active {
+.nerds-btn-common_order-btn_yellow:active {
   background-color: #c09b24;
 }
 
@@ -680,7 +681,7 @@ header-slider__p_wspacing {
   margin-bottom: 28px; 
 }
 
-.nerds-common-btn_write-us-link {
+.nerds-btn-common_write-us-link {
   margin-left: 3px;
   width: 205px;
   font-weight: 100;

@@ -35,7 +35,7 @@
         </ul>
       </div>
       <div class="header_no-index__title">
-        <h1 class="text-no-margin header_no-index__h1">
+        <h1 class="text-common header_no-index__h1">
           Добро пожаловать в магазин<br>
           готовых макетов
         </h1>
@@ -47,20 +47,180 @@
     <div class="content">
       <div class="filter">
         <form class="filter__form" action="" method="post">
-          <h2 class="text-no-margin filter__section-title">Стоимость:</h2>
+          <h2 class="text-common filter__section-title">Стоимость:</h2>
           <input class="filter__input filter__input_range" type="range">
           <span class="filter__span">От</span>
           <input type="number" value="0">
           <span class="filter__span">До</span>
           <input type="number" value="15000">
-          <h2 class="text-no-margin filter__section-title">Сетка:</h2>
-          <label for="adaptive" class="filter__label">Адаптивная</label>
+          <h2 class="text-common filter__section-title">Сетка:</h2>
           <input id="adaptive" class="filter__input filter__input_radio" type="radio" name="grid">
-          <label for="fixed" class="filter__label">Фиксированная</label>
+          <label for="adaptive" class="filter__label">Адаптивная</label>
           <input id="fixed" class="filter__input filter__input_radio" type="radio" name="grid">
-          <label for="flexible" class="filter__label">Резиновая</label>
+          <label for="fixed" class="filter__label">Фиксированная</label>
           <input id="flexible" class="filter__input filter__input_radio" type="radio" name="grid">
+          <label for="flexible" class="filter__label">Резиновая</label>
+          <h2 class="text-common filter__section-title">Особенности:</h2>
+          <input id="slider" class="filter__input filter__input_checkbox" type="checkbox">
+          <label for="slider" class="filter__label">Слайдер</label>
+          <input id="features" class="filter__input filter__input_checkbox" type="checkbox">
+          <label for="features" class="filter__label">Блок преимуществ</label>
+          <input id="news" class="filter__input filter__input_checkbox" type="checkbox">
+          <label for="news" class="filter__label">Новости</label>
+          <input id="gallery" class="filter__input filter__input_checkbox" type="checkbox">
+          <label for="gallery" class="filter__label">Галлерея</label>
+          <input id="cart" class="filter__input filter__input_checkbox" type="checkbox">
+          <label for="cart" class="filter__label">Корзина</label>
+          <input class="filter__btn filter__submit" type="submit" value="Показать">
         </form>
+      </div>
+      <div class="catalog-list">
+        <div class="sorting-menu">
+          <ul class="list-common sorting-menu__ul">
+            <li class="sorting-menu__li sorting-menu__title">Сортировать</li>
+            <li class="sorting-menu__li">
+              <a class="link-common sorting-menu__option" href="#">По цене</a>
+            </li>
+            <li class="sorting-menu__li">
+              <a class="link-common sorting-menu__option" href="#">По типу</a>
+            </li>
+            <li class="sorting-menu__li">
+              <a class="link-common sorting-menu__option" href="#">По функционалу</a>
+            </li>
+            <li class="sorting-menu__li">
+              <a class="link-common sorting-menu__option sorting-menu__option_descending" href="#">Des</a>
+            </li>
+            <li class="sorting-menu__li">
+              <a class="link-common sorting-menu__option sorting-menu__option_ascending" href="#">Asc</a>
+            </li>
+          </ul>
+          <div class="items-list">
+            <div class="items-list__item items-list__item1">
+              <div class="decorations">
+                <ul class="decorations__list">
+                  <li class="decorations__li"></li>
+                  <li class="decorations__li"></li>
+                  <li class="decorations__li"></li>
+                </ul>
+              </div>
+              <img class="img-common items-list__img" src="img/catalog-items-list-aviator.jpg" width="240" height="240" alt="Aviator-site">
+              <div class="items-list__buy-block">
+                <h2 class="text-common items-list__item-name">Aviator</h2>
+                <p class="text-common items-list__item-description">
+                  Одностраничный макет<br>
+                  с авторским дизайном
+                </p>
+                <a class="nerds-btn-common items-list__price-btn" href="#">8000 Р.</a>
+              </div>
+            </div>
+            <div class="items-list__item items-list__item2">
+              <div class="decorations">
+                <ul class="decorations__list">
+                  <li class="decorations__li"></li>
+                  <li class="decorations__li"></li>
+                  <li class="decorations__li"></li>
+                </ul>
+              </div>
+              <img class="img-common items-list__img" src="img/catalog-items-list-sunset.jpg" width="240" height="240" alt="Sunset-site">
+              <div class="items-list__buy-block">
+                <h2 class="text-common items-list__item-name">Sunset</h2>
+                <p class="text-common items-list__item-description">
+                  Интернет-магазин<br>
+                  с личным кабинетом
+                </p>
+                <a class="nerds-btn-common items-list__price-btn" href="#">10000 Р.</a>
+              </div>
+            </div>
+            <div class="items-list__item items-list__item3">
+              <div class="decorations">
+                <ul class="decorations__list">
+                  <li class="decorations__li"></li>
+                  <li class="decorations__li"></li>
+                  <li class="decorations__li"></li>
+                </ul>
+              </div>
+              <img class="img-common items-list__img" src="img/catalog-items-list-forte.jpg" width="240" height="240" alt="FORTE-site">
+              <div class="items-list__buy-block">
+                <h2 class="text-common items-list__item-name">FORTE</h2>
+                <p class="text-common items-list__item-description">
+                  Отличный макет<br>
+                  для личного блога
+                </p>
+                <a class="nerds-btn-common items-list__price-btn" href="#">5000 Р.</a>
+              </div>
+            </div>
+            <div class="items-list__item items-list__item4">
+              <div class="decorations">
+                <ul class="decorations__list">
+                  <li class="decorations__li"></li>
+                  <li class="decorations__li"></li>
+                  <li class="decorations__li"></li>
+                </ul>
+              </div>
+              <img class="img-common items-list__img" src="img/catalog-items-list-mot.jpg" width="240" height="240" alt="Modern Organic Thai-site">
+              <div class="items-list__buy-block">
+                <h2 class="text-common items-list__item-name">Modern Organic THAI</h2>
+                <p class="text-common items-list__item-description">
+                  Сайт для ресторана<br>
+                  быстрого питания
+                </p>
+                <a class="nerds-btn-common items-list__price-btn" href="#">12000 Р.</a>
+              </div>
+            </div>
+            <div class="items-list__item items-list__item5">
+              <div class="decorations">
+                <ul class="decorations__list">
+                  <li class="decorations__li"></li>
+                  <li class="decorations__li"></li>
+                  <li class="decorations__li"></li>
+                </ul>
+              </div>
+              <img class="img-common items-list__img" src="img/catalog-items-list-avenue.jpg" width="240" height="240" alt="AVENUE-site">
+              <div class="items-list__buy-block">
+                <h2 class="text-common items-list__item-name">AVENUE</h2>
+                <p class="text-common items-list__item-description">
+                  Макет для блога<br>
+                  о путешествиях
+                </p>
+                <a class="nerds-btn-common items-list__price-btn" href="#">8000 Р.</a>
+              </div>
+            </div>
+            <div class="items-list__item items-list__item6">
+              <div class="decorations">
+                <ul class="decorations__list">
+                  <li class="decorations__li"></li>
+                  <li class="decorations__li"></li>
+                  <li class="decorations__li"></li>
+                </ul>
+              </div>
+              <img class="img-common items-list__img" src="img/catalog-items-list-dovetail.jpg" width="240" height="240" alt="DOVETAIL-site">
+              <div class="items-list__buy-block">
+                <h2 class="text-common items-list__item-name">DOVETAIL</h2>
+                <p class="text-common items-list__item-description">
+                  Интернет-магазин<br>
+                  с галереей товаров
+                </p>
+                <a class="nerds-btn-common items-list__price-btn" href="#">14000 Р.</a>
+              </div>
+            </div>
+          </div>
+          <div class="jump-navigation-menu">
+            <ul class="list-common jump-navigation-menu__list">
+              <li class="jump-navigation-menu__li">
+                <a href="#" class="link-common jump-navigation-menu__link jump-navigation-menu__link_active">1</a>
+              </li>
+              <li class="jump-navigation-menu__li">
+                <a href="#" class="link-common jump-navigation-menu__link">2</a>
+              </li>
+              <li class="jump-navigation-menu__li">
+                <a href="#" class="link-common jump-navigation-menu__link">3</a>
+              </li>
+              <li class="jump-navigation-menu__li">
+                <a href="#" class="link-common jump-navigation-menu__link">Следующая</a>
+              </li>
+            </uljump-navigation-menu__list>
+          </div>
+        </div>
       </div>
     </div>
   </main>
@@ -68,13 +228,13 @@
   <footer class="footer">
     <div class="map-content">
       <div class="map-content__our-address">
-        <h3 class="text-no-margin map-content__h3">NЁRDS DESIGN STUDIO</h3>
-        <p class="text-no-margin map-content__p">
+        <h3 class="text-common map-content__h3">NЁRDS DESIGN STUDIO</h3>
+        <p class="text-common map-content__p">
           191186, Санкт-Петербург,<br> 
           ул. Б. Конюшенная, д. 19/8
         </p>  
-        <span class="text-no-margin map-content__span">тел. +7 (812) 275-75-75</span>
-        <a class="link-common nerds-common-btn nerds-common-btn_write-us-link" href="address-no-js.html">
+        <span class="text-common map-content__span">тел. +7 (812) 275-75-75</span>
+        <a class="link-common nerds-btn-common nerds-btn-common_write-us-link" href="write-us-no-js.html">
           Напишите нам
         </a>
       </div>
@@ -92,23 +252,23 @@
         <ul class="list-common socials__list">
           <li class="socials__li">
             <a class="link-common socials__social-btn socials__social-btn_social-vk" href="https://vk.com/">
-              <span class="text-no-margin socials__icon-font icon-vk"></span>
+              <span class="text-common socials__icon-font icon-vk"></span>
             </a>
           </li>
           <li class="socials__li">
             <a class="link-common socials__social-btn socials__social-btn_social-fb" href="https://www.facebook.com">
-              <span class="text-no-margin socials__icon-font icon-facebook"></span>
+              <span class="text-common socials__icon-font icon-facebook"></span>
             </a>
           </li>
           <li class="socials__li">
             <a class="link-common socials__social-btn socials__social-btn_social-inst" href="https://www.instagram.com/">
-              <span class="text-no-margin socials__icon-font icon-instagramm"></span>
+              <span class="text-common socials__icon-font icon-instagramm"></span>
             </a>
           </li>
         </ul>
         <div class="socials-info">
-          <h2 class="text-no-margin socials-info__h2">Давайте дружить, это выгодно!</h2>
-          <span class="text-no-margin socials-info__span">Скидка 10% для друзей из социальных сетей.</span>
+          <h2 class="text-common socials-info__h2">Давайте дружить, это выгодно!</h2>
+          <span class="text-common socials-info__span">Скидка 10% для друзей из социальных сетей.</span>
         </div>
       </div>
     </div>
