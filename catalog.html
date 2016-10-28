@@ -44,34 +44,44 @@
   </header>
   
   <main class="main main_catalog">
-    <div class="content">
-      <div class="filter">
-        <form class="filter__form" action="" method="post">
-          <h2 class="text-common filter__section-title">Стоимость:</h2>
-          <input class="filter__input filter__input_range" type="range">
-          <span class="filter__span">От</span>
-          <input type="number" value="0">
-          <span class="filter__span">До</span>
-          <input type="number" value="15000">
-          <h2 class="text-common filter__section-title">Сетка:</h2>
-          <input id="adaptive" class="filter__input filter__input_radio" type="radio" name="grid">
-          <label for="adaptive" class="filter__label">Адаптивная</label>
-          <input id="fixed" class="filter__input filter__input_radio" type="radio" name="grid">
-          <label for="fixed" class="filter__label">Фиксированная</label>
-          <input id="flexible" class="filter__input filter__input_radio" type="radio" name="grid">
-          <label for="flexible" class="filter__label">Резиновая</label>
-          <h2 class="text-common filter__section-title">Особенности:</h2>
-          <input id="slider" class="filter__input filter__input_checkbox" type="checkbox">
-          <label for="slider" class="filter__label">Слайдер</label>
-          <input id="features" class="filter__input filter__input_checkbox" type="checkbox">
-          <label for="features" class="filter__label">Блок преимуществ</label>
-          <input id="news" class="filter__input filter__input_checkbox" type="checkbox">
-          <label for="news" class="filter__label">Новости</label>
-          <input id="gallery" class="filter__input filter__input_checkbox" type="checkbox">
-          <label for="gallery" class="filter__label">Галлерея</label>
-          <input id="cart" class="filter__input filter__input_checkbox" type="checkbox">
-          <label for="cart" class="filter__label">Корзина</label>
-          <input class="filter__btn filter__submit" type="submit" value="Показать">
+    <div class="content main_catalog__content">
+      <div class="catalog-filter">
+        <form class="catalog-filter__form" action="" method="post">
+          <h2 class="text-common catalog-filter__section-title">Стоимость:</h2>
+          <div class="range-filter">
+            <div class="range-filter__controls">
+              <div class="range-filter__scale">
+                <div class="range-filter__bar"></div>
+                <div class="range-filter__toggle range-filter__toggle_min"></div>
+                <div class="range-filter__toggle range-filter__toggle_max"></div>
+              </div>
+            </div>
+            <div class="range-filter__values-block">
+              <span class="range-filter__span">От</span>
+              <span class="range-filter__span range-filter__value range-filter__value-min">0</span>
+              <span class="range-filter__span">До</span>
+              <span class="range-filter__span range-filter__value range-filter__value-max">15000</span>
+            </div>
+          </div>
+          <h2 class="text-common catalog-filter__section-title">Сетка:</h2>
+          <input id="adaptive" class="catalog-filter__input catalog-filter__input_radio" type="radio" name="grid">
+          <label for="adaptive" class="catalog-filter__label">Адаптивная</label>
+          <input id="fixed" class="catalog-filter__input catalog-filter__input_radio" type="radio" name="grid">
+          <label for="fixed" class="catalog-filter__label">Фиксированная</label>
+          <input id="flexible" class="catalog-filter__input catalog-filter__input_radio" type="radio" name="grid">
+          <label for="flexible" class="catalog-filter__label">Резиновая</label>
+          <h2 class="text-common catalog-filter__section-title">Особенности:</h2>
+          <input id="slider" class="catalog-filter__input catalog-filter__input_checkbox" type="checkbox">
+          <label for="slider" class="catalog-filter__label">Слайдер</label>
+          <input id="features" class="catalog-filter__input catalog-filter__input_checkbox" type="checkbox">
+          <label for="features" class="catalog-filter__label">Блок преимуществ</label>
+          <input id="news" class="catalog-filter__input catalog-filter__input_checkbox" type="checkbox">
+          <label for="news" class="catalog-filter__label">Новости</label>
+          <input id="gallery" class="catalog-filter__input catalog-filter__input_checkbox" type="checkbox">
+          <label for="gallery" class="catalog-filter__label">Галлерея</label>
+          <input id="cart" class="catalog-filter__input catalog-filter__input_checkbox" type="checkbox">
+          <label for="cart" class="catalog-filter__label">Корзина</label>
+          <input class="catalog-filter__btn catalog-filter__submit" type="submit" value="Показать">
         </form>
       </div>
       <div class="catalog-list">
