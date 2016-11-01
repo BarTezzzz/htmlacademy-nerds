@@ -639,6 +639,15 @@ header-slider__p_wspacing {
   align-items: stretch;
 }
 
+.main_catalog__btn_grey {
+  padding: 13px 0;
+  text-align: center;
+  background-color: #f1f1f1;
+  border: none;
+  cursor: pointer;
+  
+}
+
 /* --MAIN-CATALOG-Filter------------------ */
 
 .catalog-filter {
@@ -666,7 +675,13 @@ header-slider__p_wspacing {
 }
 
 .catalog-filter__input {
+  display: none;
   margin-bottom: 20px;
+}
+
+.catalog-filter__label {
+  position: relative;
+  padding-right: 35px;
 }
 
 .range-filter__controls {
@@ -743,6 +758,42 @@ header-slider__p_wspacing {
   width: 80px;
   text-align: center;
   background-color: #f1f1f1;
+}
+
+.catalog-filter__icon {
+  font-size: 26px;
+  color: #c1c1c1;
+}
+
+.catalog-filter__input:checked + .catalog-filter__label > .catalog-filter__icon_checked {
+  display: block;
+}
+  
+.catalog-filter__icon_checked {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.catalog-filter__input_checkbox + .catalog-filter__label > .catalog-filter__icon_checked {
+   left: 1px; 
+}
+
+.catalog-filter__span {
+  font: 16px/20px "Roboto", Arial, sans-serif;
+  color: #283136;
+}
+
+.catalog-filter__submit {
+  margin-top: 55px;
+  padding: 10px 0;
+  width: 155px;
+  font: 12px/18px "Roboto", Arial, sans-serif;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 /* --MAIN-CATALOG-Items-list------------- */
