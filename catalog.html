@@ -43,7 +43,7 @@
     </div>
   </header>
   
-  <main class="main main_catalog">
+  <main class="main main_no-index main_catalog">
     <div class="content main_catalog__content">
       <div class="catalog-filter">
         <form class="catalog-filter__form" action="" method="post">
@@ -58,9 +58,9 @@
             </div>
             <div class="range-filter__values-block">
               <span class="range-filter__span">От</span>
-              <span class="range-filter__span range-filter__value range-filter__value-min">0</span>
+              <div class="range-filter__value range-filter__value-min">0</div>
               <span class="range-filter__span">До</span>
-              <span class="range-filter__span range-filter__value range-filter__value-max">15000</span>
+              <div class="range-filter__value range-filter__value-max">15000</div>
             </div>
           </div>
           <h2 class="text-common catalog-filter__section-title">Сетка:</h2>
@@ -118,7 +118,7 @@
       </div>
       <div class="catalog-list">
         <div class="sorting-menu">
-          <ul class="list-common sorting-menu__ul">
+          <ul class="list-common sorting-menu__list">
             <li class="sorting-menu__li sorting-menu__title">Сортировать</li>
             <li class="sorting-menu__li">
               <a class="link-common sorting-menu__option" href="#">По цене</a>
@@ -129,11 +129,13 @@
             <li class="sorting-menu__li">
               <a class="link-common sorting-menu__option" href="#">По функционалу</a>
             </li>
-            <li class="sorting-menu__li">
-              <a class="link-common sorting-menu__option sorting-menu__option_descending" href="#">Des</a>
-            </li>
-            <li class="sorting-menu__li">
-              <a class="link-common sorting-menu__option sorting-menu__option_ascending" href="#">Asc</a>
+            <li class="sorting-menu__li sorting-menu__arrows">
+              <a class="link-common sorting-menu__option sorting-menu__option_descending" href="#">
+                <span class="icon-down-dir sorting-menu__icon-font sorting-menu__icon-font_down"></span>
+              </a>
+              <a class="link-common sorting-menu__option sorting-menu__option_ascending" href="#">
+                <span class=" icon-up-dir sorting-menu__icon-font sorting-menu__icon-font_up"></span>
+              </a>
             </li>
           </ul>
           <div class="items-list">
