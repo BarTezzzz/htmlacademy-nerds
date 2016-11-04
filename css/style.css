@@ -800,12 +800,14 @@ header-slider__p_wspacing {
   color: #000000;
 }
 
-/* --MAIN-CATALOG-Items-list------------- */
+/* --MAIN-CATALOG-List--------------------- */
 
 .catalog-list {
-  width: 565px;
+  width: 561px;
   outline: 1px solid red;
 }
+
+/* --MAIN-CATALOG-Sorting-menu------------- */
 
 .sorting-menu__list {
   display: flex;
@@ -867,10 +869,106 @@ header-slider__p_wspacing {
   opacity: 0.5;
 }
 
+/* --MAin-CATALOG-Items-list------- */
+
+.items-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.items-list__item {
+  position: relative;
+  flex-basis: 240px;
+  height: 240px;
+  margin-bottom: 80px;
+  border-top: 30px solid #f1f1f1;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  outline: 1px solid red;
+}
+
+.decorations__list {
+  position: absolute;
+  top: -30px;
+  left: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 36px;
+  outline: 1px solid red;
+}
+
+.decorations__li {
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.items-list__buy-block {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  /*display: none;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 137px;
+  height: 132px;
+  padding: 35px 30px 30px 30px;
+  text-align: center;
+  background-color: #ffffff;
+  outline: 1px solid red;
+}
+
+.items-list__item-name {
+  font: 18px/8.56px "Roboto", Arial, sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.items-list__item-description {
+  font: 14px/18px "Roboto", Arial, sans-serif;
+  color: #283136;
+}
+
+.items-list__price-btn {
+  margin-top: auto;
+  width: 138px;
+}
+
+/* --MAIN-CATALOG-Jump-navigation-menu---- */
+
+.jump-navigation-menu {
+  padding-bottom: 75px;
+  width: 285px;
+  outline: 1px solid red;
+}
+
+.jump-navigation-menu__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+.main_catalog__btn_grey {
+  width: 35px;
+  height: 35px;
+  color: #000000;
+  text-transform: uppercase;
+  border: 2px solid #f1f1f1;
+}
+
 /* --FOOTER-------------------------------------------------------------- */
 
 .footer {
   padding: 83px 0 70px 0;
+  outline: 1px solid red;
 }
 
 .footer_address-no-js,
