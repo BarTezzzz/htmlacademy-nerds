@@ -6,10 +6,7 @@
   <title>Htmlacademy Nerds template</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-<!--
-   <link rel="stylesheet/less" type="text/css" href="css/style.less">
--->
-  <script async defer type="text/javascript" src="script/less.js"></script>
+  <script async defer type="text/javascript" src="script/modal-windows.js"></script>
 </head>
 
 <body>
@@ -164,11 +161,11 @@
           ул. Б. Конюшенная, д. 19/8
         </p>  
         <span class="text-common map-content__span">тел. +7 (812) 275-75-75</span>
-        <a class="link-common nerds-btn-common nerds-btn-common_write-us-link" href="write-us-no-js.html">
+        <a class="link-common nerds-btn-common nerds-btn-common_write-us-link js-form" href="write-us-no-js.html">
           Напишите нам
         </a>
       </div>
-      <a class="link-common map-content__map-link" href="map-no-js.html">
+      <a class="link-common map-content__map-link js-map" href="map-no-js.html">
         <img class="img-common" src="img/footer-map.png" width="1199" height="416" alt="Our location">
       </a>
       <div class="nerds-logo-small">
@@ -203,6 +200,27 @@
       </div>
     </div>
   </footer>
+  
+  <div class="modal-content_form">
+    <div class="our-address-no-js">
+        <h2 class="text-common main_write-us__h2">Хотите нам написать?</h2>
+        <form class="our-address-no-js__form">
+          <div class="our-address-no-js__input-block">
+            <label class="our-address-no-js__label" for="user-name">Ваше имя:</label>
+            <input id="user-name" class="our-address-no-js__input" type="text" placeholder="Представьтесь, пожалуйста">
+          </div>
+          <div class="our-address-no-js__input-block">
+            <label class="our-address-no-js__label" for="user-email">Ваш e-mail:</label>
+            <input id="user-email" class="our-address-no-js__input" type="email" placeholder="Для отправки ответа">
+          </div>
+          <div class="our-address-no-js__input-block our-address-no-js__input-block_textarea">
+            <label class="our-address-no-js__label" for="user-text">Текст письма:</label>
+            <textarea id="user-text" class="our-address-no-js__input our-address-no-js__textarea" cols="" rows="5" placeholder="В свободной форме"></textarea>
+          </div>
+          <input class="nerds-btn-common our-address-no-js__btn" type="submit" value="Отправить">
+        </form>
+      </div>
+  </div>
   
 </body>
 </html>
