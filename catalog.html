@@ -305,19 +305,19 @@
   
   <div class="modal-content_form">
     <div class="our-address-no-js">
-        <h2 class="text-common main_write-us__h2">Хотите нам написать?</h2>
+        <button class="modal-content_close" type="button" title="Закрыть">Закрыть</button>
         <form class="our-address-no-js__form">
           <div class="our-address-no-js__input-block">
             <label class="our-address-no-js__label" for="user-name">Ваше имя:</label>
-            <input id="user-name" class="our-address-no-js__input" type="text" placeholder="Представьтесь, пожалуйста">
+            <input id="user-name" class="our-address-no-js__input" type="text" name="name" placeholder="Представьтесь, пожалуйста">
           </div>
           <div class="our-address-no-js__input-block">
             <label class="our-address-no-js__label" for="user-email">Ваш e-mail:</label>
-            <input id="user-email" class="our-address-no-js__input" type="email" placeholder="Для отправки ответа">
+            <input id="user-email" class="our-address-no-js__input" type="email" name="email" placeholder="Для отправки ответа">
           </div>
           <div class="our-address-no-js__input-block our-address-no-js__input-block_textarea">
             <label class="our-address-no-js__label" for="user-text">Текст письма:</label>
-            <textarea id="user-text" class="our-address-no-js__input our-address-no-js__textarea" cols="" rows="5" placeholder="В свободной форме"></textarea>
+            <textarea id="user-text" class="our-address-no-js__input our-address-no-js__textarea" name="message" cols="" rows="5" placeholder="В свободной форме"></textarea>
           </div>
           <input class="nerds-btn-common our-address-no-js__btn" type="submit" value="Отправить">
         </form>
