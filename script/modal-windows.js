@@ -1,3 +1,6 @@
+/*jslint node: true */
+'use strict';
+
 var link = document.querySelector(".js-form");
 var popup = document.querySelector(".modal-content_form");
 var close = popup.querySelector(".modal-content_close");
@@ -8,7 +11,7 @@ var message = popup.querySelector("[name=message]");
 var storage = localStorage.getItem("email");
 var storage = localStorage.getItem("name");
 
-link.addEventListener("click", function(event) {
+link.addEventListener("click", function (event) {
   event.preventDefault();
   popup.classList.add("modal-content_show");
   if (storage) {
@@ -20,17 +23,16 @@ link.addEventListener("click", function(event) {
   }
 });
 
-close.addEventListener("click", function(event) {
+close.addEventListener("click", function (event) {
   event.preventDefault();
   popup.classList.remove("modal-content_show");
   popup.classList.remove("modal-content_error");
 });
 
-form.addEventListener("submit", function(event) {
-  if (!login.value || !password.value) {
+form.addEventListener("submit", function (event) {
+  if (!name.value || !email.value) {
     event.preventDefault();
     popup.classList.remove("modal-content_error");
-    popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-content_error");
   } else {
     localStorage.setItem("name", name.value);
@@ -38,7 +40,7 @@ form.addEventListener("submit", function(event) {
   }
 });
 
-window.addEventListener("keydown", function(event) {
+window.addEventListener("keydown", function (event) {
   if (event.keyCode === 27) {
     if (popup.classList.contains("modal-content_show")) {
       popup.classList.remove("modal-content_show");
