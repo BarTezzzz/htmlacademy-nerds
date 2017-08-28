@@ -19,15 +19,15 @@ $(document).ready(function () {
   setInterval($.fn.sliderSwitcher, 4000);
   
 /*Modal windows*/
-  $('.js-form').click(function () {
-    event.preventDefault();
+  $('.js-form').click(function (event) {
+    event.preventDefault(event);
     
     $('.overlay').show();
     $('.modal-content_form').addClass('modal-content_show');
   });
   
-  $('.modal-content_close').click(function () {
-    event.preventDefault();
+  $('.modal-content_close').click(function (event) {
+    event.preventDefault(event);
     
     $('.overlay').hide();
     $('.modal-content_form').removeClass('modal-content_show');
